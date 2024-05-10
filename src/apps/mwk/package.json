@@ -1,0 +1,15 @@
+{
+  "name": "mwk-testing",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Eric Stanley",
+  "license": "MIT",
+  "scripts": {
+    "test": "APP_NAME=mwk-testing NODE_ENV=dev playwright test",
+    "test:staging": "APP_NAME=mwk-testing NODE_ENV=staging playwright test",
+    "test:ui": "APP_NAME=mwk-testing NODE_ENV=dev playwright test --ui",
+    "test:debug": "APP_NAME=mwk-testing NODE_ENV=dev PWDEBUG=1 playwright test",
+    "report": "npx playwright show-report reports/playwright-report",
+    "allure": "npx allure generate reports/allure/allure-result -o reports/allure/allure-report --clean && npx allure open reports/allure/allure-report"
+  }
+}

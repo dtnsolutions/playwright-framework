@@ -1,0 +1,6 @@
+{
+  "env": {
+    "dev": { "url": "https://mwkjp.test/" },
+    "staging": { "url": "https://stg.milwaukeetool.co.jp/" }
+  }
+}
