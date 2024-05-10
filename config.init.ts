@@ -20,8 +20,8 @@ export const initConfig = (appName: string) => {
         process.env.URL = jsonData.env.dev.url;
         break;
 
-      case 'uat':
-        process.env.URL = jsonData.env.uat.url;
+      case 'staging':
+        process.env.URL = jsonData.env.staging.url;
         break;
 
       default:
