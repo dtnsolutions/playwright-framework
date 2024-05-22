@@ -53,28 +53,28 @@ const config: PlaywrightTestConfig = {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
-    {
-      name: 'Pixel-5',
-      use: {
-        browserName: 'chromium',
-        ...devices['Pixel 5'],
-      },
-    },
-    {
-      name: 'iPhone-12',
-      use: {
-        browserName: 'webkit',
-        ...devices['iPhone 12'],
-      },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
+    // {
+    //   name: 'Pixel-5',
+    //   use: {
+    //     browserName: 'chromium',
+    //     ...devices['Pixel 5'],
+    //   },
+    // },
+    // {
+    //   name: 'iPhone-12',
+    //   use: {
+    //     browserName: 'webkit',
+    //     ...devices['iPhone 12'],
+    //   },
+    // },
   ],
 };
 

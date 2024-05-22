@@ -17,3 +17,8 @@ export const nonBreakingSpaceLink = 'a:has-text("Non-Breaking Space")';
 export const overlappedElementLink = 'a:has-text("Overlapped Element")';
 export const shadowDOMLink = 'a:has-text("Shadow DOM")';
 export const spinner = '#spinner';
+
+
+export const closePopupButtonTestId = 'ModalBanner-closeButton';
+export const mxMenuItem = 'a:has-text("MX")';
+

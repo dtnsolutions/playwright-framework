@@ -1,4 +1,6 @@
 {
-  "urlContains": "localhost",
+  "title": "Home | ミルウォーキーツール",
+  "MXMenuItemText": "MX建設工具",
+  "urlContains": "milwaukeetool",
   "verifyLinksScreenshotName": "verify-links"
 }

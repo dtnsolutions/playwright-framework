@@ -12,13 +12,64 @@ export default class HomePage {
 
   async open() {
     await actions.navigateTo(this.page, process.env.URL, this.workerInfo);
-    const url = this.page.url();
+    // move the mouse to make sure all the Hyva JS is loaded
+    await this.page.mouse.move(0, 1);
+  }
+
+  async closePopup() {
+    await this.page.getByTestId(locators.closePopupButtonTestId).click();
+  }
+
+  async verifyTitle() {
+    await actions.verifyPageTitle(this.page, data.title, this.workerInfo);
+  }
+
+  // check if the menu is displayed and hoverable
+  async verifyNavigationMenu() {
+    await test.step(
+      this.workerInfo.project.name +
+        ': Hovering on ' +
+        data.MXMenuItemText +
+        ' menu item',
+      async () =>
+        this.page.locator('a:has-text("' + data.MXMenuItemText + '")').hover(),
+    );
 
     await test.step(
       this.workerInfo.project.name +
-        ': Check if URL contains ' +
-        data.urlContains,
-      async () => expect(url).toContain(data.urlContains),
+        ': Verify if ' +
+        data.MXMenuItemText +
+        ' sub menu is visible',
+      async () => {
+        const subMenu = this.page.locator(
+          'a:has-text("' + data.MXMenuItemText + '") + div',
+        );
+        const isVisible = await subMenu.isVisible();
+        expect(isVisible).toBe(true);
+      }
     );
   }
+
+  // async canSearchFromHomePage() {
+  //   await actions.typeText(
+  //     this.page,
+  //     locators.searchBox,
+  //     data.searchText,
+  //     this.workerInfo,
+  //   );
+  //   await actions.clickElement(
+  //     this.page,
+  //     locators.searchButton,
+  //     this.workerInfo,
+  //   );
+  //   await actions.waitForNavigation(this.page, this.workerInfo);
+  // }
+
+  // async canAddToCart() {
+  //   await actions.clickElement(
+  //     this.page,
+  //     locators.addToCartButton,
+  //     this.workerInfo,
+  //   );
+  // }
 }

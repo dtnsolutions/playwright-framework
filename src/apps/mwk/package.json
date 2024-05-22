@@ -5,10 +5,12 @@
   "author": "Eric Stanley",
   "license": "MIT",
   "scripts": {
-    "test": "APP_NAME=mwk NODE_ENV=dev playwright test",
-    "test:staging": "APP_NAME=mwk NODE_ENV=staging playwright test",
-    "test:ui": "APP_NAME=mwk NODE_ENV=dev playwright test --ui",
-    "test:debug": "APP_NAME=mwk NODE_ENV=dev PWDEBUG=1 playwright test",
+    "test-dev": "APP_NAME=mwk NODE_ENV=dev playwright test",
+    "test-staging": "APP_NAME=mwk NODE_ENV=staging playwright test",
+    "test-dev:ui": "APP_NAME=mwk NODE_ENV=dev playwright test --ui",
+    "test-staging:ui": "APP_NAME=mwk NODE_ENV=staging playwright test --ui",
+    "test-dev:debug": "APP_NAME=mwk NODE_ENV=dev PWDEBUG=1 playwright test",
+    "test-staging:debug": "APP_NAME=mwk NODE_ENV=staging PWDEBUG=1 playwright test",
     "report": "npx playwright show-report reports/playwright-report",
     "allure": "npx allure generate reports/allure/allure-result -o reports/allure/allure-report --clean && npx allure open reports/allure/allure-report"
   }
