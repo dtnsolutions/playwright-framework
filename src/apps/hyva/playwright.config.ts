@@ -2,9 +2,9 @@ import { PlaywrightTestConfig, devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
   testDir: 'tests',
-  testMatch: 'tests/*.spec.ts',
+  testMatch: 'tests/hyvaCheckOut.spec.ts',
   timeout: 30 * 1000,
-  retries: 3,
+  retries: 0,
   workers: 3,
   globalSetup: require.resolve('@home/global-setup'),
   globalTeardown: require.resolve('@home/global-teardown'),
@@ -53,28 +53,28 @@ const config: PlaywrightTestConfig = {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
-    {
-      name: 'Pixel-5',
-      use: {
-        browserName: 'chromium',
-        ...devices['Pixel 5'],
-      },
-    },
-    {
-      name: 'iPhone-12',
-      use: {
-        browserName: 'webkit',
-        ...devices['iPhone 12'],
-      },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
+    // {
+    //   name: 'Pixel-5',
+    //   use: {
+    //     browserName: 'chromium',
+    //     ...devices['Pixel 5'],
+    //   },
+    // },
+    // {
+    //   name: 'iPhone-12',
+    //   use: {
+    //     browserName: 'webkit',
+    //     ...devices['iPhone 12'],
+    //   },
+    // },
   ],
 };
 

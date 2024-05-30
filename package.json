@@ -31,7 +31,8 @@
     "allure:deriv-api": "yarn workspace deriv-api allure",
     "mwk:test-dev": "npm run test-dev --workspace=mwk",
     "mwk:test-staging": "npm run test-staging --workspace=mwk",
-    "mwk:test-staging:ui": "npm run test-staging:ui --workspace=mwk"
+    "mwk:test-staging:ui": "npm run test-staging:ui --workspace=mwk",
+    "hyva:test-dev": "npm run test-dev --workspace=hyva"
   },
   "author": "Eric Stanley",
   "license": "MIT",

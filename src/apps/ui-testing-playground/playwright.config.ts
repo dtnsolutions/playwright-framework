@@ -12,7 +12,7 @@ const config: PlaywrightTestConfig = {
     timeout: 20000,
   },
   use: {
-    headless: true,
+    headless: false,
     actionTimeout: 0,
     trace: 'retain-on-failure',
     ignoreHTTPSErrors: true,

@@ -85,3 +85,4 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 .now
+yarn.lock

@@ -1,0 +1,6 @@
+{
+  "env": {
+    "dev": { "url": "https://checkout-demo.hyva.io/onestep" },
+    "staging": { "url": "https://mil:milwaukee1924@stg.milwaukeetool.co.jp/" }
+  }
+}
