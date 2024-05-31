@@ -21,4 +21,9 @@ export const spinner = '#spinner';
 
 export const closePopupButtonTestId = 'ModalBanner-closeButton';
 export const mxMenuItem = 'a:has-text("MX")';
+export const addToCartBtn = "(//button[contains(@class,'addTocart w-full')])[1]";
+export const sucessMessage = "div.message.success";
+export const userMenu = "(//span[text()='今すぐ登録/ログイン'])[1]";
+export const loginBtn = "//button[text()='ログインする']";
+
 

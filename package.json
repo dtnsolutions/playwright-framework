@@ -42,6 +42,7 @@
     "allure-commandline": "^2.27.0",
     "allure-playwright": "^2.13.0",
     "colors": "^1.4.0",
+    "dotenv": "^16.4.5",
     "lodash": "^4.17.21",
     "playwright": "^1.42.1",
     "prettier": "^3.2.5",
