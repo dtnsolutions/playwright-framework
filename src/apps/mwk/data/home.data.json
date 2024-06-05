@@ -2,5 +2,17 @@
   "title": "Home | ミルウォーキーツール",
   "MXMenuItemText": "MX建設工具",
   "urlContains": "milwaukeetool",
-  "verifyLinksScreenshotName": "verify-links"
+  "verifyLinksScreenshotName": "verify-links",
+  "firstName": "Nguyen",
+  "lastName": "Thuc",
+  "company": "DTN",
+  "postalCode": "3930051",
+  "region": "東京都",
+  "city": "港区",
+  "street": "麻布台1丁目9番地12号",
+  "telephone": "0312345678",
+  "cardNumber": "3700 0000 0000 002",
+  "expiryMonth": "03/30",
+  "cvv": "7373",
+  "successPageTitle": "Success Page | ミルウォーキーツール"
 }

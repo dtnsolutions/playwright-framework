@@ -18,12 +18,26 @@ export const overlappedElementLink = 'a:has-text("Overlapped Element")';
 export const shadowDOMLink = 'a:has-text("Shadow DOM")';
 export const spinner = '#spinner';
 
-
 export const closePopupButtonTestId = 'ModalBanner-closeButton';
 export const mxMenuItem = 'a:has-text("MX")';
-export const addToCartBtn = "(//button[contains(@class,'addTocart w-full')])[1]";
+export const addToCartBtn = "button:has-text('カートに入れる')";
 export const sucessMessage = "div.message.success";
 export const userMenu = "(//span[text()='今すぐ登録/ログイン'])[1]";
 export const loginBtn = "//button[text()='ログインする']";
+export const logOutBtn = "(//form[@id='logout-form'])[1]";
+export const usernameInput = "input[name='username']";
+export const passwordInput = "input[type='password']";
+export const loginSubmit = "button:has-text('ログイン')";
+export const miniCart = "#menu-cart-icon";
+export const goToCheckout = "a:has-text('カートに移動')";
+export const proceedToCheckout = "a#checkout-link-button";
+export const continueBtn = "button[data-role='opc-continue']";
+export const addNewAddress = "span:has-text('新しい住所')";
+export const agreementPaymentCheck = "input#agreement_squareup_payment_2";
 
-
+export const proceedButtonSelector ='span:has-text("進む")';
+export const paymentMethodSelector = 'クレジットカード*';
+export const cardNumberInputSelector = 'input#cardNumber';
+export const expirationDateInputSelector = '#expirationDate';
+export const cvvInputSelector = 'input#cvv';
+export const confirmOrderButtonLocator = '[role="button"][name="注文を確定する"]';
